@@ -1,53 +1,98 @@
 <!DOCTYPE html>
+<html lang="en">
+    
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/style.css">
-		<title>Sarah Wesley's Portfolio</title>
+		<title>Sarah Portfolio</title>
     </head>
+
     <body>
+
         <header class="header">
-            <h1>Sarah Wesley's Portfolio</h1>
+            <h1>Sarah Portfolio</h1>
             
             <nav class="nav">
                 <ul>
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#works">Works</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                    <li><a href="/">Resume</a></li>
                 </ul>
             </nav>
         </header>
-        <figure class="portfolio-image">
-            <img src="./assets/images/portfolio-image.jpg" alt="Image of part of the Manhattan city skyline at sunset from atop the observation deck of the Empire State Building, looking west towards the skyscapers at Hudson Yards with the Hudson River and the city of Newark, New Jersey behind them">
-        </figure>
-        <main>
-            <section id="about-me">
+
+        <div class="hero-image">
+            <div class="subtitle">
+                <h2>BootCamp Student of KU</h2>
+            </div>
+        </div>
+
+        <!-- About Me Content -->
+        <section id="about-me" class="aboutme">
+            <div class="title">
                 <h2>About Me</h2>
-                <p>My name is Sarah Wesley, born in western New York state however residing in Wichita, KS. I'm aiming to be a full-stack web developer. I'm attending the KU Coding Bootcamp, where I am going through classes to learn the different languages to be a full stack developer. I eventually would like to have a job based around my favorite place in New York City.</p>
-                <p>On a more personal note, I love music and singing, as well as reading books and writing. I own probably over 200 books. I also know bits of the Korean, Japanese, and French languages.</p>
-            </section>
-            <section id="works">
-                <h2>Works</h2>
-                <div class="project-1"></div>
-                <div class="project-2"></div>
-                <div class="project-3"></div>
-                <div class="project-4"></div>
-                <div class="project-5"></div>
-            </section>
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <p>
-                    <ul>
-                        <li><a href="#">555.555.5555</a></li>
-                        <li><a href="#">srwesley722@gmail.com</a></li>
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Spotify</a></li>
-                    </ul>
+
+                <img src="./assets/images/sarah.jpg" alt="Profile picture of myself, Sarah, taken during my birthday week vacation to New York, atop the oberservation deck of the World Trade Center with the rest of the Manhattan skyline behind me.">
+            </div>
+            <div class="content">
+                <p>My name is Sarah, and I'm from the US, specifically born in western New York state and now living in the midwest. I originally took an intro web development class back in senior year in high school (2010). Then a couple years later, I enrolled in the web development AAS program at Butler County Community College - I sadly had to withdraw, so I never completed it. However, I'm retaking the chance and taking the Coding Bootcamp offered by KU.
+                I love music above everything else though and am an avid reader, writer, and book collector.
                 </p>
-            </section>
-        </main>
+            </div>
+        </section>
+
+        <!-- Works Content -->
+        <section id="works" class="works">
+            <div class="title">
+                <h2>Works</h2>
+            </div>
+
+            <div class="works-content">
+
+                <div class="Earful">
+                    <figure>
+                        <a href="https://chase-garrett.github.io/earful/" target="_blank">
+                            <img src="./assets/images/earful.png" alt="Partial screenshot of the earful application">
+                            <figcaption>Project 01: Earful</figcaption>
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="Book-Buddy">
+                    <figure>
+                        <a href="https://book-buddy-group-project-2-0373de53f1e7.herokuapp.com/login" target="_blank">
+                            <img src="./assets/images/book-buddy.png" alt="Partial screenshot of the bookbuddy application">
+                            <figcaption>Project 02: BookBuddy</figcaption>
+                        </a>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Me Content -->
+        <footer>
+            <secion id="contact-me" class="contactme">
+                <div class="title">
+                    <h2>Contact Me</h2>
+                </div>
+
+                <div class="contact-content">
+
+                    <ul>
+                        <li><a href="#number">555-555-5555</a></li>
+                        <li><a href="mailto: srwesley722@gmail.com">Gmail</a></li>
+                        <li><a href="https://github.com/srwesley">GitHub</a></li>
+                        <li><a href="https://twitter.com/CoderSarah722">Twitter</a></li>
+                        <li><a href="https://open.spotify.com/user/1214536790">Spotify</a></li>
+                    </ul>
+
+                </div>
+            </secion>
+        </footer>
+      
     </body>
-    <footer>
-        <p></p>
-    </footer>
+
 </html>

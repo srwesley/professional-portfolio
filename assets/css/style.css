@@ -1,89 +1,309 @@
+/* Universal selector */
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
+
+:root {
+    --border-color: #000000;
+    --primary-color: #8ee092;
+    --secondary-color: #e4c2e3;
+    --navlink-color: #2e7dd8;
+    --navlink-background-color: #d8b184;
+}
+
 body {
+    background-color: white;
+    margin: 0px;
+}
+
+.header {
+    padding: 20px;
+    background-color: var(--primary-color);
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #e0d8ed;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
 }
-header {
-    text-align: left;
-    padding-top: 10px;
-    background-color: #07152b;
-}
-header h1 {
-    margin-left: 40px;
-    display: inline-block;
-    color: #07152b;
-    background-color: #38a4cf;
-}
-header nav {
+
+.header h1 {
+    background-color: #66d56b;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
-    margin-right: 40px;
-    float: right;
-    font-size: 20px;
+    font-style: italic;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+.header a {
+    padding: 15px;
+    color: var(--navlink-color);
+    font-style: oblique;
+}
+
+.header nav ul li:hover {
+    background-color: var(--navlink-background-color);
+    padding: 5px;
+}
+
+/* Hero Image section */
+
+.hero-image {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px;
+    margin: 0px;
+    background-image: url("../images/newyork.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.subtitle {
+    padding: 12px;
+    background-color: #42a347;
+    display: flex;
+    margin-left: auto;
+}
+
+h2 {
+    font-family: serif;
+    font-size: 30px;
+}
+
+/* About Me section */
+
+.aboutme {
+    background-color: var(--primary-color);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    background-color: #07152b;
-    color:#38a4cf;
+    margin-top: 0px;
 }
-header nav ul {
-    list-style-type: none;
+
+.title h2 {
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+    font-size: 50px;
 }
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+
+.aboutme img {
+    margin-left: 25%;
 }
-header nav ul li a {
-    color:#38a4cf;
+
+.content {
+    display: flex;
+    flex-direction: wrap;
+    margin: 20px;
+    width: 75%;
+    border-left: 5px solid;
+    border-color: var(--border-color);
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
 }
-.portfolio-image {
-   display: block;
-   display: flex;
-   flex-wrap: wrap;
+
+/* Works section */
+
+.works {
+    background-color: var(--primary-color);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
 }
-img {
+
+.works-content {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    width: 68%;
+    padding: 20px;
+    border-color: var(--border-color);
+    border-left: 5px solid;
+}
+
+figcaption {
+    margin-left: 5px;
+    margin-top: -35px;
+    position: absolute;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+    background-color: #2a942a;
+    border: 3px solid;
+}
+
+.works figcaption:hover {
+    background-color: #306822;
+}
+
+.Earful {
     width: 100%;
 }
-h1 {
 
+.Earful img {
+    width: 100%;
+    display: flex;
 }
-h2 {
-    margin: 25px;
-}
-p {
-    margin-bottom: 15px;
-}
-#about-me, #works, #contact {
-    margin-left: 60px;
-}
-#works {
 
+.Book-Buddy {
+    width: 100%;
 }
-.project-1 {
 
+.Book-Buddy img {
+    width: 100%;
+    display: flex;
 }
-#contact ul{
-    list-style-type: none;
-    justify-content: space-evenly;
+
+.works img:hover {
+    opacity: 75%;
 }
-#contact ul li {
-    display: inline-block;
-    margin-left: 50px;
+
+/* Footer/Contact Me section */
+
+.contactme {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: wrap;
+    margin: 10px;
+    margin-right: 25px;
+    width: 75%;
+    border-left: 5px solid;
+    border-color: var(--border-color);
+    align-items: center;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.contactme ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: left;
+    list-style: none;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.contactme li a {
     font-size: 20px;
+    padding: 10px;
+    color: var(--navlink-color);
 }
-#contact ul li a {
-    color:#07152b;
-}
-a {
 
+.contact-content ul li:hover {
+    background-color: var(--navlink-background-color);
 }
-a:hover {
-    
-}
-a:focus {
 
+/* Media Query for various screens and devices */
+
+@media screen and (max-width: 980px) {
+    .header {
+        justify-content: center;
+        margin: 0px;
+    }
+    .header h1 {
+        font-size: 25px;
+    }
+    .header nav ul {
+        font-size: 20px;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .hero-image {
+        padding: 25px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .title h2 {
+        font-size: 35px;
+    }
+    .aboutme img {
+        height: 100px;
+    }
+    .content {
+        font-size: 18px;
+    }
+    .works-content {
+        width: 100%;
+        padding: 5px;
+    }
+    .contactme ul {
+        width: 100%;
+        justify-content: left;
+    }
+    .contactme ul li a {
+        line-height: 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        justify-content: center;
+        margin: 0px;
+    }
+    .header h1 {
+        font-size: 15px;
+    }
+    .header nav ul {
+        font-size: 15px;
+    }
+    .hero-image {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .title h2 {
+        font-size:  25px;
+    }
+    .content {
+        font-size: 13px;
+        padding: 8px;
+        margin: 0%;
+    }
+    .works-content {
+        width: 100%;
+    }
+    .works figcaption {
+        font-size: 18px;
+    }
+    .contactme ul {
+        width: 100%;
+        justify-content: left;
+        flex-direction: column;
+    }
+    .contactme ul li a {
+        font-size: 15px;
+        line-height: 0.5;
+    }
 }
